@@ -1,0 +1,16 @@
+.hero {
+  padding-bottom: 6em;
+  text-align: center;
+}
+.hero .hero_image {
+  height: 300px;
+  background: url("../images/image-mockups.png") center bottom no-repeat, url("../images/bg-intro-mobile.svg") center no-repeat;
+  background-size: 345px, cover;
+  margin-bottom: 2em;
+}
+.hero .content {
+  text-align: justify;
+  margin-bottom: 2.5em;
+}
+
+/*# sourceMappingURL=hero.css.map */

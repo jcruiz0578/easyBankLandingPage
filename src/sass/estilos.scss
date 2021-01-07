@@ -1,0 +1,54 @@
+@import "header";
+@import "hero";
+
+
+:root{
+  //primary
+  --darkBlue: hsl(233, 26%, 24%);
+  --limeGreen: hsl(136, 65%, 51%);
+  --brightCyan: hsl(192, 70%, 51%);
+  //Neutral
+  --grayishBlue: hsl(233, 8%, 62%);
+  --lightGrayishBlue: hsl(220, 16%, 96%);
+  --veryLightGray: hsl(0, 0%, 98%);
+  --white: hsl(0, 0%, 100%);
+  font-size: 18px;
+}
+
+
+body{
+  font-family: 'Public Sans', sans-serif;
+  margin: 0;
+}
+
+.u-wrapper{
+  max-width: 1280px;
+  margin: auto;
+  padding:  0 1.9em;
+
+}
+
+
+.title__h1{
+    margin: 0;
+    color: var(--darkBlue);
+    font-size: 2.2em;
+    font-weight: 400;
+
+  }
+
+.u-p{
+  color: var(--grayishBlue);
+  font-size: 0.8em;
+  line-height: 1.7em;
+}
+
+
+.button{
+  padding: 1em 2em;
+  background-image: linear-gradient(to right, var(--limeGreen) 0%, var(--brightCyan) 100% );
+  border: none;
+  border-radius: 1.5em;
+  color: var(--white);
+  font-size: 1.3em;
+}
