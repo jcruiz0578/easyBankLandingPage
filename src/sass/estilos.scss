@@ -1,5 +1,7 @@
 @import "header";
+@import "menu";
 @import "hero";
+@import "why";
 
 
 :root{
@@ -43,6 +45,12 @@ body{
   line-height: 1.7em;
 }
 
+
+.h2{
+  color: black;
+  font-weight: 300;
+  font-size: 1.1em;
+}
 
 .button{
   padding: 1em 2em;

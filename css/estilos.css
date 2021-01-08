@@ -1,13 +1,20 @@
-.menu {
-  border: 1px solid red;
-}
-
 .header {
-  border: 1px solid red;
   display: flex;
   justify-content: space-between;
-  margin: 0;
-  padding: 1.3em 0;
+  padding: 1.2em 1.4em;
+}
+
+.header-logo {
+  background: url("../images/logo.svg") no-repeat center;
+  background-size: contain;
+  display: inline-flex;
+  height: 40px;
+  width: 150px;
+}
+
+.menu {
+  width: 40px;
+  background: url("../images/icon-hamburger.svg") no-repeat center;
 }
 
 .hero {
@@ -22,6 +29,20 @@
 }
 .hero .content {
   text-align: justify;
+  margin-bottom: 2.5em;
+}
+
+.why {
+  background-color: var(--veryLightGray);
+  padding-bottom: 6em;
+  text-align: center;
+}
+
+.content {
+  padding-bottom: 2em;
+}
+
+.why__item p {
   margin-bottom: 2.5em;
 }
 
@@ -58,6 +79,12 @@ body {
   color: var(--grayishBlue);
   font-size: 0.8em;
   line-height: 1.7em;
+}
+
+.h2 {
+  color: black;
+  font-weight: 300;
+  font-size: 1.1em;
 }
 
 .button {

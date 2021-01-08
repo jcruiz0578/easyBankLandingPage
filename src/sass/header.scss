@@ -1,8 +1,23 @@
-@import "menu";
-.header{
-  border: 1px solid red;
+.header {
   display: flex;
   justify-content: space-between;
-  margin: 0;
-  padding: 1.3em 0;
+  padding: 1.2em 1.4em;
 }
+
+  .header-logo {
+    background: url('../images/logo.svg') no-repeat center;
+    background-size: contain;
+    display: inline-flex;
+    height: 40px;
+    width: 150px;
+
+
+  }
+
+
+
+
+
+
+
+
