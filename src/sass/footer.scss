@@ -1,0 +1,67 @@
+.footer{
+  background: var(--darkBlue);
+  color : var(--white);
+  text-align: center;
+  padding:  2em 0;
+  margin-bottom: 12em;
+  &__logo{
+  display: block;
+    margin: auto auto 1.5em;
+  }
+
+  &__social{
+    display: flex;
+    justify-content: center;
+
+
+  }
+
+
+  @mixin icon{
+    width: 40px;
+    height: 40px;
+    padding-right: 0.7em;
+    display: inline-flex; // cuando es una <a> y es llamado desde el css para q tome los parametros
+    background-repeat: no-repeat;
+  }
+
+
+  .icon {
+    &__facebook{
+      @include icon;
+    }
+    &__youtube{
+      @include icon;
+    }
+    &__twitter{
+      @include icon;
+    }
+    &__pinterest{
+      @include icon;
+    }
+
+    &__instagram{
+      @include icon;
+    }
+
+
+  }
+
+a{
+  color: var(--veryLightGray);
+  display: block;
+  padding: 0.5em 0;
+  text-decoration: none;
+}
+
+
+button{
+
+  margin: auto;
+  margin-top: 1em;
+  display: flex;
+  justify-content: center;
+}
+
+
+}

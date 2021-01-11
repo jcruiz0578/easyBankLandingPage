@@ -49,6 +49,7 @@
 .lastArticles {
   background-color: var(--veryLightGray);
   text-align: justify;
+  padding-bottom: 4em;
 }
 .lastArticles .title__h1 {
   text-align: center;
@@ -79,6 +80,69 @@
 .lastArticles .lastArticles__item p {
   margin: 0 1em;
   font-size: 0.7em;
+}
+
+.footer {
+  background: var(--darkBlue);
+  color: var(--white);
+  text-align: center;
+  padding: 2em 0;
+  margin-bottom: 12em;
+}
+.footer__logo {
+  display: block;
+  margin: auto auto 1.5em;
+}
+.footer__social {
+  display: flex;
+  justify-content: center;
+}
+.footer .icon__facebook {
+  width: 40px;
+  height: 40px;
+  padding-right: 0.7em;
+  display: inline-flex;
+  background-repeat: no-repeat;
+}
+.footer .icon__youtube {
+  width: 40px;
+  height: 40px;
+  padding-right: 0.7em;
+  display: inline-flex;
+  background-repeat: no-repeat;
+}
+.footer .icon__twitter {
+  width: 40px;
+  height: 40px;
+  padding-right: 0.7em;
+  display: inline-flex;
+  background-repeat: no-repeat;
+}
+.footer .icon__pinterest {
+  width: 40px;
+  height: 40px;
+  padding-right: 0.7em;
+  display: inline-flex;
+  background-repeat: no-repeat;
+}
+.footer .icon__instagram {
+  width: 40px;
+  height: 40px;
+  padding-right: 0.7em;
+  display: inline-flex;
+  background-repeat: no-repeat;
+}
+.footer a {
+  color: var(--veryLightGray);
+  display: block;
+  padding: 0.5em 0;
+  text-decoration: none;
+}
+.footer button {
+  margin: auto;
+  margin-top: 1em;
+  display: flex;
+  justify-content: center;
 }
 
 :root {
