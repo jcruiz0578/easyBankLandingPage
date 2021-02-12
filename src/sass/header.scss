@@ -3,10 +3,12 @@
   display: flex;
   justify-content: space-between;
   padding: 1.2em 0;
+  position: relative; // para posicionar el menu
 
   .header_content{
     display: flex;
     justify-content: space-between;
+
   }
 
 
