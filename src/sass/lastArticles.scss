@@ -41,4 +41,20 @@
 
   }
 
+  @media screen and (min-width: 768px){
+
+      .lastArticles_grid{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-column-gap: 1em;  // espaciado
+      }
+
+
+  }
+
+
+
+
+
+
 }

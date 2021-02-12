@@ -1,8 +1,14 @@
 .header {
+
   display: flex;
   justify-content: space-between;
-  padding: 1.2em 1.4em;
-}
+  padding: 1.2em 0;
+
+  .header_content{
+    display: flex;
+    justify-content: space-between;
+  }
+
 
   .header-logo {
     background: url('../images/logo.svg') no-repeat center;
@@ -10,9 +16,34 @@
     display: inline-flex;
     height: 40px;
     width: 150px;
+    align-self: center;
 
 
   }
+  .button{
+    display: none;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .header{
+    .button{
+      display: inline;
+      width: 150px;
+      height: 40px;
+      align-self: center;
+    }
+
+  }
+
+  .header_content{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+}
+
+
 
 
 

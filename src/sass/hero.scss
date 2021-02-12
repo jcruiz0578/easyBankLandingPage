@@ -1,5 +1,5 @@
 .hero{
-  padding-bottom: 6em;
+  padding-bottom: 2em;
   text-align: center;
 
   .hero_image{
@@ -10,8 +10,57 @@
   }
 
   .content {
-    text-align: justify;
+    //text-align: justify;
+    //justify-content: center;
     margin-bottom: 2.5em;
+    h1{
+      text-align: center;
+    }
+
+    button{
+      margin-top: 4em;
+    }
+
   }
 
+}
+
+@media screen and (min-width: 1024px){
+  .hero{
+
+
+    .u-wrapper{
+
+      padding:  0;
+
+      display: grid;
+      grid-template-areas: "content image";
+      grid-template-columns: 480px 1fr;
+
+      .hero_image {
+
+        grid-area: image;
+        min-height: inherit;
+
+        height: 600px;
+        background:  url("../images/image-mockups.png") right -110px top -100px  no-repeat, url("../images/bg-intro-desktop.svg") right -180px top -140px no-repeat;
+        background-size: 600px, cover; // primera imagen un valor y la segunda que cover
+        margin-bottom:0
+
+
+
+      }
+      .content {
+        padding-left: 1.5em;
+        grid-area: content;
+        position: relative;
+        top: 120px;
+        text-align: left;
+        h1{
+          text-align: left;
+        }
+      }
+
+    }
+  }
 }

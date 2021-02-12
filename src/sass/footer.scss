@@ -3,7 +3,7 @@
   color : var(--white);
   text-align: center;
   padding:  2em 0;
-  margin-bottom: 12em;
+  //margin-bottom: 12em;
   &__logo{
   display: block;
     margin: auto auto 1.5em;
@@ -18,8 +18,8 @@
 
 
   @mixin icon{
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     padding-right: 0.7em;
     display: inline-flex; // cuando es una <a> y es llamado desde el css para q tome los parametros
     background-repeat: no-repeat;
@@ -59,9 +59,53 @@ button{
 
   margin: auto;
   margin-top: 1em;
-  display: flex;
+  //display: flex;
   justify-content: center;
 }
+
+  @media screen and (min-width: 768px){
+.u-wrapper{
+  display: grid;
+  grid-column-gap: 1em;
+  grid-template-columns: 280px  1fr  400px;
+  grid-template-areas:  "logo links  button"
+  "social  links u-p";
+
+
+}
+    &__logo{
+    grid-area: logo;
+    margin: initial;  // devuelve a la posición oroginal
+    }
+
+    &__social{
+      grid-area: social;
+      justify-content: initial;
+
+    }
+
+    &__links{
+      grid-area: links;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      justify-items: start;
+    }
+
+    &__button{
+
+      grid-area: button;
+      text-align: right;
+
+
+
+    }
+
+    .u-p{
+      grid-area: u-p;
+      text-align: right;
+    }
+
+  }
 
 
 }
